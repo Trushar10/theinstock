@@ -1,0 +1,93 @@
+.s3-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 8px 8px 24px #4cb9e64d;
+    border-radius: 25px;
+    gap: 2rem;
+
+    h2{
+        font-size: 4.5rem;
+
+        @media(max-width:1400px){
+            font-size: 4rem;
+        }
+    }
+
+    h3{
+        font-size: 1.5rem;
+
+        @media(max-width:1400px){
+            font-size: 1.3rem;
+        }
+    }
+
+    p{
+        text-align: end;
+    }   
+
+    .compare{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        
+        svg,h3 {
+            width: 15%;
+
+            @media (max-width:1400px){
+                width: 25%;
+            }
+        }
+
+        .pg-after {
+            &::after{
+                content: '30 minutes*';
+                font-size: 1.2rem;
+                font-weight: 600;
+                position: absolute;
+                right: -100%;
+                top: 50%;
+                transform: translate(60%,-50%);
+            }
+        }
+
+        .progress-bar{
+            height: 60%;
+            border-radius: 50px;
+            background-color: $btn-color;
+            box-shadow: 4px 5px 9px #4cb9e6b5;
+        }
+
+        .pw-1 {
+            position: relative;
+            width: 0rem;
+            transition: all .3s ease-in-out;          
+        }
+
+        .pw-4{
+            width: 4rem;
+        }
+
+        .pw-2 {
+            position: relative;
+            width: 0rem;
+            transition: all .3s ease-in-out;
+
+            &::after{
+                content: '2-3 Days';
+                font-size: 1.2rem;
+                font-weight: 600;
+                position: absolute;
+                right: -11%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .pw-60{
+            width: 60rem;
+        }
+
+    }
+}

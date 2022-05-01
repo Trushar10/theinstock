@@ -1,0 +1,56 @@
+.s5 {
+    .seller-link {
+        color: $btn-text-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        padding: 0 6%;
+
+        h2{
+            font-size: 3rem;
+
+            @media (max-width:1400px){
+                font-size: 2rem;
+            }
+        }
+
+        a{
+            font-size: 1.5rem;
+
+            @media (max-width:1400px){
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .caption {
+        h2{
+            font-size: 4rem;
+
+            @media (max-width:1400px){
+                font-size: 3rem;
+            }
+        }
+
+        .caption-img {
+            position: absolute;
+            width: 352px;
+            height: 530px;
+            right: 8%;
+            transform: translateY(-6%);         
+
+            @media (max-width:1400px){
+                width: 240px;
+                height: 387px;
+            }
+        }
+    }
+
+    .swiper {
+        overflow: visible; 
+    }
+
+}

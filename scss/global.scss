@@ -1,0 +1,70 @@
+@import 'default';
+@import 'header';
+@import 's1';
+@import 's2';
+@import 's3';
+@import 's4';
+@import 's5';
+@import 's6';
+@import 's7';
+@import 'swiper';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: $text-color;
+    font-family: $text-font;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+a{
+    color: $text-color;
+    display: block;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(min-width: 1400px){
+        max-width: 1366px;
+    }
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.fs-justify-start{
+    justify-content: flex-start;
+}
+
+.btn {
+    color: $btn-text-color;
+    border-radius: 50px;
+    background-color: $btn-color;
+    padding: .7rem 1rem;
+}
+
+.mt-1{
+    margin-top: 1%;
+}

@@ -1,0 +1,52 @@
+.s6 {
+    gap: 3rem;
+
+    .swiper{
+        height: auto;
+    }
+
+    .reverse.caption{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: end;
+
+        img{
+            width:208px !important;
+            height: 413px !important;
+
+            @media (max-width:1400px){
+                width: 160px !important;
+                height: 317px !important;
+            }
+        }
+    }
+    
+    .testimonial.swiper{
+        height: auto;
+
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            img{
+                width: 144px;
+                height: 144px;
+            }
+
+            p{
+                text-align: start;
+                font-size: 1.1rem;
+                font-weight: 600;
+
+                @media (max-width:1400px){
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

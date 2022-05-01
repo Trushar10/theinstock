@@ -1,0 +1,46 @@
+.s-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .caption{
+        color: $btn-text-color;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 15%;
+        width: 100%;
+        padding: 0 6%;
+
+        h2{
+            font-size: 6rem;
+
+            @media(max-width:1400px){
+                font-size: 4rem;
+            }
+        }
+
+        .child {
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3{
+                font-weight: 400;
+
+                @media(max-width:1400px){
+                    font-size: 1.3rem;
+                }
+            }
+
+            .btn{
+                font-size: 1.5rem;
+
+                @media(max-width:1400px){
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

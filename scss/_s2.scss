@@ -1,0 +1,63 @@
+
+.s2-flex {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+
+    div {
+
+        &:nth-child(1){
+            width: 50%;
+        }
+       
+
+        &:nth-child(2){
+            width: 30%;
+
+            @media(max-width:1400px){
+                width: 36%;
+            }
+        }
+    }
+
+    .description{
+        h2{
+            font-size: 4.5rem;
+
+            @media(max-width:1400px){
+                font-size: 3.5rem;
+            }
+        }    
+
+        h3{
+            font-size: 1.5rem;
+
+            @media(max-width:1400px){
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .benefits{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 2rem;
+
+        .material-symbols-outlined{
+            font-size: 6rem;
+            color: #4cb9e6;
+            padding: 2rem;
+            border-radius: 25px;
+            box-shadow: 8px 8px 24px #4cb9e64d;
+        }
+
+        svg {
+            padding: 2rem;
+            border-radius: 25px;
+            box-shadow: 8px 8px 24px #4cb9e64d;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.s4{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    .mockup-1{
+        .img-transition {
+            img{
+               margin-top: 2rem;
+            }
+        }
+    }
+
+    .mockup-2{
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    .mockup-1, .mockup-2{
+        position: relative;
+        display: flex;
+        width: 50%;
+
+        h2{
+            font-size: 3.5rem;
+
+            @media (max-width:1400px){
+                font-size: 3rem;;
+            }
+        }
+        
+        .img-transition {
+            img{
+                width: 400px;
+                height: 646px;
+
+                @media (max-width:1400px){
+                    width: 320px;
+                    height: 517px;
+                }
+            }
+        }
+        
+        .caption-1 {
+            position: absolute;
+            top: 19%;
+            right: -8%;      
+
+            @media (max-width:1400px){
+                right: -14%;
+            }
+        }    
+
+        .caption-2 {
+            position: absolute;
+            bottom: 20%;
+            right: 50%;
+
+            @media (max-width:1400px){
+                right: 53%;
+            }
+
+            .link {
+                justify-content: flex-end;
+            }
+        }    
+        
+        .app-link{           
+            .link{
+                display: flex;
+                gap: 1rem;
+
+                img{
+                    width: 160px;
+                    height: 42px;
+
+                    @media (max-width:1400px){
+                        width: 112px;
+                        height: 29px;
+                    }
+                }
+            }
+        }
+    }
+}
