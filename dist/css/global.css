@@ -825,6 +825,10 @@
   }
 }
 
+.s6 .testimonial p {
+  margin-bottom: 0;
+}
+
 .s6 .testimonial.swiper {
   height: auto;
 }
