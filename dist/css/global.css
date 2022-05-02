@@ -435,7 +435,7 @@
 @media (max-width: 576px) {
   .img-1, .img-2, .img-3, .img-4 {
     border-radius: 25px;
-    height: 700px;
+    max-height: 700px;
   }
 }
 
