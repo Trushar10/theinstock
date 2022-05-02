@@ -848,6 +848,13 @@
   height: 144px;
 }
 
+@media (max-width: 1400px) {
+  .s6 .testimonial.swiper .swiper-slide img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .s6 .testimonial.swiper .swiper-slide p {
   text-align: start;
   font-size: 1.1rem;
