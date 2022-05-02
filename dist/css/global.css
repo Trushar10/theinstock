@@ -195,6 +195,13 @@
   left: -10%;
 }
 
+@media (max-width: 1400px) {
+  .e-seven {
+    top: -30%;
+    left: -15%;
+  }
+}
+
 .e-seven img {
   width: 640px;
   height: 855px;
@@ -205,6 +212,13 @@
 .e-seven img:hover {
   -webkit-transform: translateX(6%);
           transform: translateX(6%);
+}
+
+@media (max-width: 1400px) {
+  .e-seven img {
+    width: 560px;
+    height: 598px;
+  }
 }
 
 .header {
