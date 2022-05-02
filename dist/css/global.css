@@ -6,6 +6,12 @@
   right: -19%;
 }
 
+@media (max-width: 1400px) {
+  .e-one {
+    top: 13%;
+  }
+}
+
 .e-one img {
   width: 480px;
   height: 472px;
@@ -16,6 +22,13 @@
 .e-one img:hover {
   -webkit-transform: translateX(-6%);
           transform: translateX(-6%);
+}
+
+@media (max-width: 1400px) {
+  .e-one img {
+    width: 320px;
+    height: 315px;
+  }
 }
 
 .e-two {

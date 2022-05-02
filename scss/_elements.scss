@@ -3,6 +3,10 @@
     z-index: 2;
     top: 10%;
     right: -19%;
+
+    @media (max-width:1400px){
+        top: 13%;     
+    }
    
     img{
         width: 480px;
@@ -13,6 +17,10 @@
             transform: translateX(-6%);
         }
 
+        @media (max-width:1400px){
+            width: 320px;
+            height: 315px;     
+        }
     }
 }
 
