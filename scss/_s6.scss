@@ -28,6 +28,11 @@
         p{
             margin-bottom: 0;
         }
+
+        .scale-0{
+            transition: all .3s ease-out;
+            transform: scale(0);
+        }
     }
 
     .testimonial.swiper{
@@ -40,9 +45,23 @@
             align-items: center;
             gap: 1rem; 
 
+            &:nth-child(2){
+                .fb{
+                    transition-delay: 1.3s;
+                }
+            }
+
+            &:nth-child(3){
+                .fb{
+                    transition-delay: 1.8s;
+                }
+            }
+
             img{
                 width: 144px;
                 height: 144px;
+                transform: scale(0);
+                transition: all 1s ease-in-out;
 
                 @media(max-width:1400px){
                     width: 100px;
@@ -101,4 +120,20 @@
     @media (max-width:1400px){
         height: 442.79px;
     }
+}
+
+.scale{
+    transform: scale(1) !important;
+}
+
+.bottom {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all .5s ease-out;
+}
+
+.fb{
+    opacity: 1;
+    transform:  translateY(0);    
+    transition-delay: .8s;
 }
