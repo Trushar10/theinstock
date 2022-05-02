@@ -79,14 +79,14 @@
 .e-five {
   position: absolute;
   z-index: 2;
-  bottom: -20%;
+  top: -45%;
   right: 0%;
   left: -4%;
 }
 
 .e-five img {
   width: 2400px;
-  height: 659px;
+  height: 541px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
@@ -234,6 +234,34 @@
   .s-flex .caption .child .btn {
     font-size: 1.1rem;
   }
+}
+
+.img-1 {
+  background-image: url("../img/Image-1.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.img-2 {
+  background-image: url("../img/Image-2.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.img-3 {
+  background-image: url("../img/Image-3.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.img-4 {
+  background-image: url("../img/Image-4.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .s2-flex {
@@ -829,6 +857,17 @@ footer::after {
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 5%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  display: none;
+  color: currentColor;
+}
+
+@media (max-width: 576px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: block;
+  }
 }
 
 * {

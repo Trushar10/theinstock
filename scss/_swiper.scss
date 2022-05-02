@@ -33,3 +33,12 @@
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
   bottom: 5%;
 }
+
+.swiper-button-next, .swiper-button-prev{
+  display: none;
+  color: currentColor;
+
+  @media (max-width:576px){
+    display: block;
+  }
+}
