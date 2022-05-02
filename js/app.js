@@ -7,6 +7,7 @@ var swiper = new Swiper('.mySwiper1', {
 	speed: 1000,
 	spaceBetween: 30,
 	effect: 'fade',
+	loop: true,
 	centeredSlides: true,
 	autoplay: {
 		delay: 3000,
@@ -23,6 +24,7 @@ var swiper = new Swiper('.mySwiper5', {
 	speed: 1000,
 	spaceBetween: 30,
 	effect: 'fade',
+	loop: true,
 	fadeEffect: {
 		crossFade: true,
 	},
@@ -42,6 +44,7 @@ var swiper = new Swiper('.mySwiper6', {
 	speed: 1000,
 	spaceBetween: 30,
 	effect: 'fade',
+	loop: true,
 	centeredSlides: true,
 	autoplay: {
 		delay: 3000,
@@ -56,6 +59,7 @@ var swiper = new Swiper('.mySwiper6', {
 var swiper = new Swiper('.mySwiper7', {
 	slidesPerView: 3,
 	spaceBetween: 30,
+	// loop: true,
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,

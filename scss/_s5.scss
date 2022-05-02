@@ -56,3 +56,43 @@
     }
 
 }
+
+.s5-img-1{
+    background: url('/img/s5-Image-1.webp');
+    background-repeat: no-repeat;
+    height: 709.59px;
+
+    @media(max-width:1400px){
+        height: 519.46px;
+    }
+}
+
+.s5-img-2{
+    background: url('/img/s5-Image-2.webp');
+    background-repeat: no-repeat;
+    height: 709.59px;
+
+    @media(max-width:1400px){
+        height: 519.46px;
+    }
+}
+
+.s5-img-3{
+    background: url('/img/s5-Image-3.webp');
+    background-repeat: no-repeat;
+    height: 709.59px;
+
+    @media(max-width:1400px){
+        height: 519.46px;
+    }
+}
+
+.s5-img-4{
+    background: url('/img/s5-Image-4.webp');
+    background-repeat: no-repeat;
+    height: 709.59px;
+
+    @media(max-width:1400px){
+        height: 519.46px;
+    }
+}

@@ -2,9 +2,9 @@
     gap: 3rem;
     z-index: 5;
 
-    .swiper{
-        height: auto;
-    }
+    // .swiper{
+    //     height: auto;
+    // }
 
     .reverse.caption{
         display: flex;
@@ -32,22 +32,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 1rem;
-
-            // @media(max-width:576px){
-            //     width: 40% !important;
-            //     margin-right: 0 !important;
-            //     padding: 0 2rem;
-            // }
+            gap: 1rem; 
 
             img{
                 width: 144px;
                 height: 144px;
-
-                // @media(max-width:576px){
-                //     width: 110px;
-                //     height: 110px;
-                // }
             }
 
             p{
@@ -60,5 +49,45 @@
                 }
             }
         }
+    }
+}
+
+.s6-img-1{
+    background: url('/img/s6-Image-1.webp');
+    background-repeat: no-repeat;
+    height: 604.85px;
+
+    @media (max-width:1400px){
+        height: 442.79px;
+    }
+}
+
+.s6-img-2{
+    background: url('/img/s6-Image-2.webp');
+    background-repeat: no-repeat;
+    height: 604.85px;
+
+    @media (max-width:1400px){
+        height: 442.79px;
+    }
+}
+
+.s6-img-3{
+    background: url('/img/s6-Image-3.webp');
+    background-repeat: no-repeat;
+    height: 604.85px;
+
+    @media (max-width:1400px){
+        height: 442.79px;
+    }
+}
+
+.s6-img-4{
+    background: url('/img/s6-Image-4.webp');
+    background-repeat: no-repeat;
+    height: 604.85px;
+
+    @media (max-width:1400px){
+        height: 442.79px;
     }
 }

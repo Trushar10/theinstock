@@ -1,7 +1,15 @@
 .s-flex{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    .swiper-flex {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        height: 100%;
+    }
 
     .caption{
         color: $btn-text-color;
@@ -46,29 +54,41 @@
 }
 
 .img-1 {
-    background-image: url('../img/Image-1.webp');
+    background: url('/img/Image-1.webp');
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    height: 748.64px;
+
+    @media (max-width:1400px){
+        height: 548.05px;
+    }
 }
 
 .img-2 {
-    background-image: url('../img/Image-2.webp');
+    background: url('/img/Image-2.webp');
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+     height: 748.64px;
+
+    @media (max-width:1400px){
+        height: 548.05px;
+    }
 }
 
 .img-3 {
-    background-image: url('../img/Image-3.webp');
+    background: url('/img/Image-3.webp');
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+     height: 748.64px;
+
+    @media (max-width:1400px){
+        height: 548.05px;
+    }
 }
 
 .img-4 {
-    background-image: url('../img/Image-4.webp');
+    background: url('/img/Image-4.webp');
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+     height: 748.64px;
+
+    @media (max-width:1400px){
+        height: 548.05px;
+    }
 }
