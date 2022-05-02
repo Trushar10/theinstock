@@ -78,7 +78,7 @@ const appearOnScroll = new IntersectionObserver(function (
 		if (!entry.isIntersecting) {
 			return;
 		} else {
-			entry.target.classList.add('appear');
+			// entry.target.classList.add('appear');
 			appearOnScroll.unobserve(entry.target);
 
 			// counter up

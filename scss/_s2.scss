@@ -4,6 +4,7 @@
     justify-content:space-between;
     align-items: center;
     width: 100%;
+    z-index: 5;
 
     div {
 
@@ -23,6 +24,7 @@
 
     .description{
         h2{
+            transform-origin: 0;
             font-size: 4.5rem;
 
             @media(max-width:1400px){
