@@ -52,6 +52,11 @@
     z-index: 2;
     top: -50%;
     right: -20%;
+
+    @media(max-width:1400px){
+        top: -25%;
+        right: -15%;
+    }
     
     img{
         width: 960px;
@@ -60,6 +65,11 @@
 
         &:hover{
             transform: translateX(-6%);
+        }
+        
+        @media(max-width:1400px){
+            width: 720px;
+            height: 623px;
         }
     }
 }

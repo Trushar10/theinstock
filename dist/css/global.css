@@ -64,6 +64,13 @@
   right: -20%;
 }
 
+@media (max-width: 1400px) {
+  .e-three {
+    top: -25%;
+    right: -15%;
+  }
+}
+
 .e-three img {
   width: 960px;
   height: 1073px;
@@ -74,6 +81,13 @@
 .e-three img:hover {
   -webkit-transform: translateX(-6%);
           transform: translateX(-6%);
+}
+
+@media (max-width: 1400px) {
+  .e-three img {
+    width: 720px;
+    height: 623px;
+  }
 }
 
 .e-four {
