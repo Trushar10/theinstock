@@ -4,6 +4,13 @@
     justify-content: flex-start;
     width: 100%;
 
+    .swiper-flex {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        height: 100%;
+    }
+
     .caption{
         color: $btn-text-color;
         display: flex;
@@ -68,7 +75,7 @@
 .swiper-height {
 
     @media(max-width:576px){
-        height: 100%;
+        height: 71%;
     }
 }
 
