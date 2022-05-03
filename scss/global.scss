@@ -49,6 +49,15 @@ h1,h2,h3,h4,h5,h6 {
     overflow: visible;
 }
 
+.swiper-flex {
+    @media(max-width576px){
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        height: 100%;
+    }
+}
+
 .container{
     position: relative;
     max-width: 1000px;
