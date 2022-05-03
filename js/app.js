@@ -82,7 +82,6 @@ const appearOnScroll = new IntersectionObserver(function (
 		if (!entry.isIntersecting) {
 			return;
 		} else {
-			// entry.target.classList.add('appear');
 			appearOnScroll.unobserve(entry.target);
 
 			// counter up
@@ -115,41 +114,85 @@ faders.forEach((fader) => {
 });
 
 //Section 2 text and logo changing
-let slideIndex = 0;
-showSlides();
+const s2Slide = document.querySelectorAll('.s2-flex');
 
-function showSlides() {
-	let i;
-	let slides = document.getElementsByClassName('description');
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = 'none';
-	}
-	slideIndex++;
-	if (slideIndex > slides.length) {
-		slideIndex = 1;
-	}
-	slides[slideIndex - 1].style.display = 'block';
-	setTimeout(showSlides, 3000);
-}
+const s2Options_1 = {
+	threshold: 1,
+	rootMargin: '0px',
+};
 
-let logoIndex = 0;
-showLogo();
+const s2OnScroll_1 = new IntersectionObserver(function (entries, s2OnScroll_1) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			s2OnScroll_1.unobserve(entry.target);
 
-function showLogo() {
-	let i;
-	let slides = document.getElementsByClassName('benefit-logo');
-	for (i = 0; i < slides.length; i++) {
-		slides[i].classList.remove('logo-active');
-	}
-	logoIndex++;
-	if (logoIndex > slides.length) {
-		logoIndex = 1;
-	}
-	slides[logoIndex - 1].classList.add('logo-active');
-	setTimeout(showLogo, 3000);
-}
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName('description');
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = 'none';
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1;
+				}
+				slides[slideIndex - 1].style.display = 'block';
+				setTimeout(showSlides, 2000);
+			}
+
+			let logoIndex = 0;
+			showLogo();
+
+			function showLogo() {
+				let i;
+				let slides = document.getElementsByClassName('benefit-logo');
+				for (i = 0; i < slides.length; i++) {
+					slides[i].classList.remove('logo-active');
+				}
+				logoIndex++;
+				if (logoIndex > slides.length) {
+					logoIndex = 1;
+				}
+				slides[logoIndex - 1].classList.add('logo-active');
+				setTimeout(showLogo, 2000);
+			}
+		}
+	});
+}, s2Options_1);
+
+s2Slide.forEach((s2) => {
+	s2OnScroll_1.observe(s2);
+});
 
 //Section 3 progress bar
+const s3Text = document.querySelectorAll('.animate-x');
+
+const s3Options_1 = {
+	threshold: 1,
+	rootMargin: '0px',
+};
+
+const s3OnScroll_1 = new IntersectionObserver(function (entries, s3OnScroll_1) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			entry.target.classList.add('fl');
+			s3OnScroll_1.unobserve(entry.target);
+		}
+	});
+}, s3Options_1);
+
+s3Text.forEach((animate) => {
+	s3OnScroll_1.observe(animate);
+});
+
+//Progress bar 1
 const progress_1 = document.querySelectorAll('.pw-1');
 
 const widthOptions_1 = {
@@ -176,6 +219,7 @@ progress_1.forEach((bar_1) => {
 	widthOnScroll_1.observe(bar_1);
 });
 
+//Progress bar 2
 const progress_2 = document.querySelectorAll('.pw-2');
 
 const width_2Options = {
@@ -202,7 +246,7 @@ progress_2.forEach((bar_2) => {
 	width_2OnScroll.observe(bar_2);
 });
 
-// Section 6
+// Section 6 testimonial
 const scale = document.querySelectorAll('.scale-0');
 
 const scaleOptions = {

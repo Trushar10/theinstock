@@ -72,6 +72,13 @@
     }
 }
 
+.swiper-height {
+
+    @media(max-width:576px){
+        height: 71%;
+    }
+}
+
 .img-1, .img-2, .img-3, .img-4 {
     height: 748.64px;
 
@@ -81,7 +88,7 @@
 
     @media(max-width:576px){
         border-radius: 25px;
-        max-height: 700px;
+        // max-height: 700px;
     }
 }
 

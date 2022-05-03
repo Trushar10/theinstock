@@ -422,6 +422,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .swiper-height {
+    height: 71%;
+  }
+}
+
 .img-1, .img-2, .img-3, .img-4 {
   height: 748.64px;
 }
@@ -435,7 +441,6 @@
 @media (max-width: 576px) {
   .img-1, .img-2, .img-3, .img-4 {
     border-radius: 25px;
-    max-height: 700px;
   }
 }
 
@@ -704,6 +709,20 @@
   .s3-flex .compare .pw-60 {
     width: 38rem;
   }
+}
+
+.animate-x {
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.fl {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .s4 {
