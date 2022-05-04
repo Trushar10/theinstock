@@ -305,13 +305,13 @@
   position: absolute;
   z-index: 2;
   top: -20%;
-  right: -5%;
+  right: 0;
 }
 
 @media (max-width: 1400px) {
   .e-eight {
     top: -15%;
-    right: -5%;
+    right: 0;
   }
 }
 
@@ -923,6 +923,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  gap: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -932,6 +933,7 @@
     border-radius: 25px;
     background-color: #fff;
     padding: 1rem;
+    gap: 0;
   }
 }
 
@@ -940,10 +942,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
 }
 
 @media (max-width: 576px) {
   .s3-flex .d-inner .compare-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -951,6 +962,7 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     height: 100%;
+    gap: 0;
   }
 }
 
@@ -1613,8 +1625,8 @@
 }
 
 .s6 .testimonial.swiper .swiper-slide img {
-  width: 144px;
-  height: 144px;
+  width: 130px;
+  height: 130px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 1s ease-in-out;
@@ -2021,6 +2033,8 @@ footer::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 12rem;
   z-index: 5;
 }
 

@@ -240,11 +240,11 @@
     position: absolute;
     z-index: 2;
     top: -20%;
-    right: -5%;
+    right: 0;
 
     @media (max-width:1400px){
         top: -15%;
-        right: -5%;
+        right: 0;
     }
 
     @media (min-width: 1900px){
