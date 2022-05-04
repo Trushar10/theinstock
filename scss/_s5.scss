@@ -1,6 +1,11 @@
 .s5 {
     z-index: 5;
 
+    .swiper-pagination{
+        text-align: start;
+        padding-left: 6%;
+    }
+
     .seller-link {
         color: $btn-text-color;
         display: flex;
@@ -61,6 +66,12 @@
                 width: 240px;
                 height: 387px;
             }
+
+            @media(max-width:576px){
+                width: 128px;
+                height: 206px;
+                transform: translateY(45%);
+            }
         }
     }
 
@@ -68,6 +79,12 @@
         overflow: visible;
     }
 
+}
+
+.s5-img-1, .s5-img-2, .s5-img-3, .s5-img-4 {
+    @media(max-width:576px){
+        border-radius: 25px;
+    }
 }
 
 .s5-img-1 {

@@ -13,6 +13,10 @@
         align-items: flex-end;
         text-align: end;
 
+        @media(max-width:576px){
+            gap: 1rem;
+        }
+
         img{
             width:208px !important;
             height: 413px !important;
@@ -20,6 +24,19 @@
             @media (max-width:1400px){
                 width: 160px !important;
                 height: 317px !important;
+            }
+
+            @media(max-width:576px){
+                width: 96px !important;
+                height: 191px !important;
+            }
+        }
+    }
+
+    .caption {
+        h2 {
+            @media(max-width:576px){
+                font-size: 1.5rem;;
             }
         }
     }
@@ -79,6 +96,12 @@
                 }
             }
         }
+    }
+}
+
+.s6-img-1, .s6-img-2, .s6-img-3, .s6-img-4{
+    @media(max-width:576px){
+        border-radius: 25px;
     }
 }
 
