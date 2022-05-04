@@ -1,10 +1,16 @@
 .btn-outline{
+    font-size: 1rem;
+    text-align: center;
     display: inline-block;
     color: $btn-color;
     border-radius: 50px;
     background-color: transparent;
     padding: .7rem 1rem;
     border: 1px solid $btn-color;
+
+    @media(max-width:576px){
+        margin: .5rem 0;
+    }
 }
 
 .c-flex{
@@ -64,9 +70,7 @@
 
         .d-flex-column{
             display: flex;
-            flex-direction: column;
-
-          
+            flex-direction: column;          
         }
 
         .d-flex-row{
@@ -76,6 +80,7 @@
 
             @media(max-width:576px){
                 flex-direction: column;
+                gap: .5rem;
             }
 
             div{
