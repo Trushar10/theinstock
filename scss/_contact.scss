@@ -30,8 +30,16 @@
         flex-direction: column;
         width: 50%;
 
+        @media(max-width:576px){
+            width: 100%;
+        }
+
         label,input{
             margin-bottom: 1rem;
+            
+            @media(max-width:576px){
+                margin-bottom: .5rem;
+            }
         }
 
         label{
@@ -55,6 +63,8 @@
         .d-flex-column{
             display: flex;
             flex-direction: column;
+
+          
         }
 
         .d-flex-row{
@@ -62,8 +72,16 @@
             justify-content: flex-end;
             gap: 1rem;
 
+            @media(max-width:576px){
+                flex-direction: column;
+            }
+
             div{
                 width: 50%;
+
+                @media(max-width:576px){
+                    width: 100%;
+                }
             }
         }
     }
