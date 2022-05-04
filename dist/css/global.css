@@ -856,7 +856,19 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .s3-flex .d-inner .compare-inner .note {
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    left: -10%;
   }
 }
 
@@ -889,6 +901,7 @@
 @media (max-width: 576px) {
   .s3-flex h3 {
     font-size: 1rem;
+    margin-bottom: 0;
   }
 }
 
@@ -953,6 +966,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .s3-flex .compare h3 {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1400px) {
   .s3-flex .compare svg {
     width: 170px;
@@ -960,9 +979,36 @@
   }
 }
 
+@media (max-width: 576px) {
+  .s3-flex .compare svg {
+    width: 100px;
+    height: 21px;
+  }
+}
+
 .s3-flex .compare p {
   font-weight: 700;
   margin-bottom: 0;
+}
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .s3-flex .compare:first-child p {
+    position: absolute;
+    bottom: 2.5rem;
+    width: 100%;
+    right: -3.3rem;
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .s3-flex .compare:nth-child(2) p {
+    position: absolute;
+    bottom: 2.5rem;
+    width: 100%;
+    left: 1.5rem;
+    font-size: .8rem;
+  }
 }
 
 .s3-flex .compare .progress-bar {
@@ -989,7 +1035,7 @@
 @media (max-width: 576px) {
   .s3-flex .compare .pw-1 {
     position: absolute;
-    bottom: 17%;
+    bottom: 6%;
     left: 50%;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -1002,6 +1048,12 @@
   width: 4rem;
 }
 
+@media (max-width: 576px) {
+  .s3-flex .compare .pw-4 {
+    width: 1rem;
+  }
+}
+
 .s3-flex .compare .pw-2 {
   position: relative;
   width: 0rem;
@@ -1012,7 +1064,7 @@
 @media (max-width: 576px) {
   .s3-flex .compare .pw-2 {
     position: absolute;
-    bottom: 17%;
+    bottom: 6%;
     left: 50%;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -1028,6 +1080,12 @@
 @media (max-width: 1400px) {
   .s3-flex .compare .pw-60 {
     width: 38rem;
+  }
+}
+
+@media (max-width: 1400px) and (max-width: 576px) {
+  .s3-flex .compare .pw-60 {
+    width: 20rem;
   }
 }
 
