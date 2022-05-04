@@ -301,6 +301,88 @@
   }
 }
 
+.e-eight {
+  position: absolute;
+  z-index: 2;
+  top: -20%;
+  right: -5%;
+}
+
+@media (max-width: 1400px) {
+  .e-eight {
+    top: -15%;
+    right: -5%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .e-eight {
+    right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .e-eight {
+    display: none;
+  }
+}
+
+.e-eight img {
+  width: 640px;
+  height: 855px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (max-width: 1400px) {
+  .e-eight img {
+    width: 560px;
+    height: 598px;
+  }
+}
+
+.e-nine {
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  left: -5%;
+}
+
+@media (max-width: 1400px) {
+  .e-nine {
+    bottom: 5%;
+    left: -5%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .e-nine {
+    left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .e-nine {
+    display: none;
+  }
+}
+
+.e-nine img {
+  width: 640px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+@media (max-width: 1400px) {
+  .e-nine img {
+    width: 560px;
+  }
+}
+
 .show {
   display: block !important;
 }
@@ -412,13 +494,21 @@
   }
 }
 
+@media (min-width: 576px) {
+  .header div:first-child {
+    display: none;
+  }
+}
+
 .header .site-identity img {
   width: 200px;
   height: 43px;
 }
 
-.header .menu-container {
-  display: none;
+@media (max-width: 576px) {
+  .header .menu-container {
+    display: none;
+  }
 }
 
 .header .menu {
@@ -1757,6 +1847,7 @@ footer::after {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 0;
+  z-index: 5;
 }
 
 .footer img {
@@ -1791,6 +1882,10 @@ footer::after {
     padding: 1rem 0;
     gap: 0;
   }
+}
+
+.footer .footer-links .d-none {
+  display: block;
 }
 
 @media (max-width: 576px) {
@@ -1903,6 +1998,102 @@ footer::after {
   }
 }
 
+.btn-outline {
+  display: inline-block;
+  color: #009cdc;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: .7rem 1rem;
+  border: 1px solid #009cdc;
+}
+
+.c-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+}
+
+.contact-us h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .contact-us h2 {
+    font-size: 2rem;
+  }
+}
+
+.contact-us .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.contact-us .contact-form label, .contact-us .contact-form input {
+  margin-bottom: 1rem;
+}
+
+.contact-us .contact-form label {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1400px) {
+  .contact-us .contact-form label {
+    font-size: 1rem;
+  }
+}
+
+.contact-us .contact-form input {
+  padding: .5rem 1rem;
+  border-radius: 50px;
+  border: 1px solid #0000003b;
+}
+
+.contact-us .contact-form .btn {
+  font-size: 1rem;
+}
+
+.contact-us .contact-form .d-flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-us .contact-form .d-flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1rem;
+}
+
+.contact-us .contact-form .d-flex-row div {
+  width: 50%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1981,6 +2172,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   background-color: #009cdc;
   padding: .7rem 1rem;
+  border: none;
 }
 
 .mt-1 {

@@ -11,6 +11,15 @@
         padding-top: 1rem;
     }
 
+    div{
+        &:first-child{
+
+            @media(min-width:576px){
+                display: none;
+            }
+        }
+    }
+
     .site-identity {
         img{
             width: 200px;
@@ -19,7 +28,9 @@
     }
 
     .menu-container{
-        display: none;
+        @media(max-width:576px){
+            display: none;
+        }
     }
 
     .menu{

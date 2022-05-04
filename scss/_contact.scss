@@ -1,0 +1,70 @@
+.btn-outline{
+    display: inline-block;
+    color: $btn-color;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: .7rem 1rem;
+    border: 1px solid $btn-color;
+}
+
+.c-flex{
+    justify-content: space-between;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+
+        @media(max-width:1400px){
+            font-size: 2rem;
+        }
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        label,input{
+            margin-bottom: 1rem;
+        }
+
+        label{
+            font-size: 1.5rem;
+
+            @media(max-width:1400px){
+                font-size: 1rem;
+            }
+        }
+
+        input{
+            padding: .5rem 1rem;
+            border-radius: 50px;
+            border: 1px solid #0000003b;
+        }
+
+        .btn {
+            font-size: 1rem;
+        }
+
+        .d-flex-column{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .d-flex-row{
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+
+            div{
+                width: 50%;
+            }
+        }
+    }
+}

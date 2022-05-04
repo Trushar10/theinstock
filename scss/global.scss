@@ -10,6 +10,7 @@
 @import 's6';
 @import 's7';
 @import 'swiper';
+@import 'contact';
 
 *{
     box-sizing: border-box;
@@ -82,6 +83,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 50px;
     background-color: $btn-color;
     padding: .7rem 1rem;
+    border: none;
 }
 
 .mt-1{
