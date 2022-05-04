@@ -1114,6 +1114,14 @@
   z-index: 5;
 }
 
+@media (max-width: 576px) {
+  .s6 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .s6 .reverse.caption {
   display: -webkit-box;
   display: -ms-flexbox;
