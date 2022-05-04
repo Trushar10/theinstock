@@ -1120,6 +1120,7 @@
 .s6 {
   gap: 3rem;
   z-index: 5;
+  overflow-x: hidden;
 }
 
 .s6 .reverse.caption {
