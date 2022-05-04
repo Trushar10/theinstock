@@ -1254,7 +1254,6 @@
 
 @media (max-width: 576px) {
   .s6 .testimonial.swiper .swiper-slide p {
-    text-align: center;
     font-size: .9rem;
   }
 }
