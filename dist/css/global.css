@@ -1507,6 +1507,7 @@ footer::after {
 @media (max-width: 576px) {
   .footer .footer-links .social svg {
     width: 1rem;
+    height: 1rem;
   }
 }
 
