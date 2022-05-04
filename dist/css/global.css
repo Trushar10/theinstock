@@ -813,11 +813,15 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     height: 80%;
   }
 }
 
 .s3-flex .d-inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,10 +835,29 @@
   height: 100%;
 }
 
+@media (max-width: 576px) {
+  .s3-flex .d-inner {
+    -webkit-box-shadow: 8px 8px 24px #4cb9e64d;
+            box-shadow: 8px 8px 24px #4cb9e64d;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 1rem;
+  }
+}
+
 .s3-flex .d-inner .compare-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 576px) {
+  .s3-flex .d-inner .compare-inner {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 100%;
+  }
 }
 
 .s3-flex h2 {
@@ -895,6 +918,7 @@
 }
 
 .s3-flex .compare {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,6 +930,15 @@
 
 @media (max-width: 576px) {
   .s3-flex .compare {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    margin-bottom: 2rem;
     gap: 0;
   }
 }
@@ -956,9 +989,12 @@
 @media (max-width: 576px) {
   .s3-flex .compare .pw-1 {
     position: absolute;
-    bottom: 15%;
+    bottom: 17%;
+    left: 50%;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    -webkit-transform-origin: 0;
+            transform-origin: 0;
   }
 }
 
@@ -976,9 +1012,12 @@
 @media (max-width: 576px) {
   .s3-flex .compare .pw-2 {
     position: absolute;
-    bottom: 15%;
+    bottom: 17%;
+    left: 50%;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    -webkit-transform-origin: 0;
+            transform-origin: 0;
   }
 }
 
