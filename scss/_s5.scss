@@ -2,9 +2,13 @@
     z-index: 5;
 
     .swiper-pagination{
-        text-align: start;
-        padding-left: 6%;
-    }
+
+        @media (max-width:576px) {
+            text-align: start;
+            padding-left: 6%;
+        }
+       
+    }    
 
     .seller-link {
         color: $btn-text-color;

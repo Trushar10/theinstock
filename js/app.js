@@ -20,40 +20,141 @@ var swiper = new Swiper('.mySwiper1', {
 });
 
 //section 5 slider
-var swiper = new Swiper('.mySwiper5', {
-	speed: 1000,
-	spaceBetween: 30,
-	effect: 'fade',
-	loop: true,
-	fadeEffect: {
-		crossFade: true,
-	},
-	centeredSlides: true,
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
+const s5Swiper = document.querySelectorAll('.mySwiper5');
+
+const swiper5Options = {
+	threshold: 1,
+	rootMargin: '0px',
+};
+
+const swiper5Scroll = new IntersectionObserver(function (
+	entries,
+	swiper5Scroll
+) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			swiper5Scroll.unobserve(entry.target);
+
+			var swiper = new Swiper('.mySwiper5', {
+				speed: 1000,
+				spaceBetween: 30,
+				effect: 'fade',
+				loop: true,
+				fadeEffect: {
+					crossFade: true,
+				},
+				centeredSlides: true,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		}
+	});
+},
+swiper5Options);
+
+s5Swiper.forEach((s5swiper) => {
+	swiper5Scroll.observe(s5swiper);
+});
+
+const sw5Swiper = document.querySelectorAll('.mySwiper5 .swiper-wrapper');
+
+const swiperw5Options = {
+	threshold: 1,
+	rootMargin: '0px',
+};
+
+const swiperw5Scroll = new IntersectionObserver(function (
+	entries,
+	swiperw5Scroll
+) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			entry.target.classList.remove('s-overflow');
+			swiperw5Scroll.unobserve(entry.target);
+		}
+	});
+},
+swiperw5Options);
+
+sw5Swiper.forEach((sw5swiper) => {
+	swiperw5Scroll.observe(sw5swiper);
 });
 
 //section 6 slider
-var swiper = new Swiper('.mySwiper6', {
-	speed: 1000,
-	spaceBetween: 30,
-	effect: 'fade',
-	loop: true,
-	centeredSlides: true,
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
+const s6Swiper = document.querySelectorAll('.mySwiper6');
+
+const swiper6Options = {
+	threshold: 1,
+	rootMargin: '0px',
+};
+
+const swiper6Scroll = new IntersectionObserver(function (
+	entries,
+	swiper6Scroll
+) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			swiper6Scroll.unobserve(entry.target);
+			var swiper = new Swiper('.mySwiper6', {
+				speed: 1000,
+				spaceBetween: 30,
+				effect: 'fade',
+				loop: true,
+				centeredSlides: true,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		}
+	});
+},
+swiper6Options);
+
+s6Swiper.forEach((s6swiper) => {
+	swiper6Scroll.observe(s6swiper);
+});
+
+const sw6Swiper = document.querySelectorAll('.mySwiper6 .swiper-wrapper');
+
+const swiperw6Options = {
+	threshold: 1,
+	rootMargin: '0px',
+};
+
+const swiperw6Scroll = new IntersectionObserver(function (
+	entries,
+	swiperw6Scroll
+) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			entry.target.classList.remove('s-overflow');
+			swiperw6Scroll.unobserve(entry.target);
+		}
+	});
+},
+swiperw6Options);
+
+sw6Swiper.forEach((sw5swiper) => {
+	swiperw6Scroll.observe(sw5swiper);
 });
 
 const viewportWidth = window.innerWidth;
