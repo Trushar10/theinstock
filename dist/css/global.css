@@ -997,7 +997,7 @@
 @media (max-width: 576px) and (max-width: 576px) {
   .s3-flex .compare:first-child p {
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 2rem;
     width: 100%;
     right: -3.3rem;
     font-size: .8rem;
@@ -1007,7 +1007,7 @@
 @media (max-width: 576px) and (max-width: 576px) {
   .s3-flex .compare:nth-child(2) p {
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 2rem;
     width: 100%;
     left: 1.5rem;
     font-size: .8rem;
@@ -1038,7 +1038,7 @@
 @media (max-width: 576px) {
   .s3-flex .compare .pw-1 {
     position: absolute;
-    bottom: 6%;
+    bottom: 2rem;
     left: 50%;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -1067,7 +1067,7 @@
 @media (max-width: 576px) {
   .s3-flex .compare .pw-2 {
     position: absolute;
-    bottom: 6%;
+    bottom: 2rem;
     left: 50%;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
