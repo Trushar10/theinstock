@@ -1203,6 +1203,7 @@
 @media (max-width: 576px) {
   .s6 .testimonial.swiper .swiper-slide {
     padding: 0 3rem;
+    gap: .5rem;
   }
 }
 
