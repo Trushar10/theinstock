@@ -1383,6 +1383,7 @@
 
 footer {
   position: relative;
+  overflow: hidden;
 }
 
 footer::after {
@@ -1401,6 +1402,8 @@ footer::after {
   footer::after {
     width: 100%;
     border-top-left-radius: 0rem;
+    -webkit-transform: rotate(358deg);
+            transform: rotate(358deg);
   }
 }
 
@@ -1446,7 +1449,7 @@ footer::after {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 2rem 0;
+    padding: 1rem 0;
     gap: 0;
   }
 }
