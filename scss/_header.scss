@@ -11,13 +11,12 @@
         padding-top: 1rem;
     }
 
-    div{
-        &:first-child{
+    .h-d-none{
 
-            @media(min-width:576px){
-                display: none;
-            }
+        @media(min-width:576px){
+            display: none;
         }
+        
     }
 
     .site-identity {
@@ -28,6 +27,7 @@
     }
 
     .menu-container{
+
         @media(max-width:576px){
             display: none;
         }

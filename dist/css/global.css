@@ -495,7 +495,7 @@
 }
 
 @media (min-width: 576px) {
-  .header div:first-child {
+  .header .h-d-none {
     display: none;
   }
 }
