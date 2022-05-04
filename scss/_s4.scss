@@ -40,6 +40,11 @@
                     width: 320px;
                     height: 517px;
                 }
+
+                @media(max-width:576px){
+                    width: 160px;
+                    height: 258px;
+                }
             }
         }
         
@@ -50,6 +55,13 @@
 
             @media (max-width:1400px){
                 right: -14%;
+            }
+
+            @media(max-width:576px){
+                left: 100%;
+                top: 09%;
+                background: #000;
+                width: 100%;
             }
         }    
 
@@ -62,6 +74,11 @@
                 right: 53%;
             }
 
+            @media(max-width:576px){
+                right: 85%;
+                bottom: 10%;
+            }
+
             .link {
                 justify-content: flex-end;
             }
@@ -71,10 +88,19 @@
             
             h2{
                 color: #fff ;
+
+                @media(max-width:576px){
+                    font-size: 2rem;
+                }
             }      
+
             .link{
                 display: flex;
                 gap: 1rem;
+
+                @media(max-width:576px){
+                    flex-direction: column;
+                }
 
                 img{
                     width: 160px;

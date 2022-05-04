@@ -700,6 +700,26 @@
   }
 }
 
+.s3-flex .d-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.s3-flex .d-inner .compare-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .s3-flex h2 {
   font-size: 4.5rem;
 }
@@ -803,11 +823,26 @@
           box-shadow: 4px 5px 9px #4cb9e6b5;
 }
 
+@media (max-width: 576px) {
+  .s3-flex .compare .progress-bar {
+    height: 3%;
+  }
+}
+
 .s3-flex .compare .pw-1 {
   position: relative;
   width: 0rem;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .s3-flex .compare .pw-1 {
+    position: absolute;
+    bottom: 15%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
 }
 
 .s3-flex .compare .pw-4 {
@@ -819,6 +854,15 @@
   width: 0rem;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .s3-flex .compare .pw-2 {
+    position: absolute;
+    bottom: 15%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
 }
 
 .s3-flex .compare .pw-60 {
@@ -891,6 +935,13 @@
   }
 }
 
+@media (max-width: 576px) {
+  .s4 .mockup-1 .img-transition img, .s4 .mockup-2 .img-transition img {
+    width: 160px;
+    height: 258px;
+  }
+}
+
 .s4 .mockup-1 .caption-1, .s4 .mockup-2 .caption-1 {
   position: absolute;
   top: 19%;
@@ -900,6 +951,15 @@
 @media (max-width: 1400px) {
   .s4 .mockup-1 .caption-1, .s4 .mockup-2 .caption-1 {
     right: -14%;
+  }
+}
+
+@media (max-width: 576px) {
+  .s4 .mockup-1 .caption-1, .s4 .mockup-2 .caption-1 {
+    left: 100%;
+    top: 09%;
+    background: #000;
+    width: 100%;
   }
 }
 
@@ -915,6 +975,13 @@
   }
 }
 
+@media (max-width: 576px) {
+  .s4 .mockup-1 .caption-2, .s4 .mockup-2 .caption-2 {
+    right: 85%;
+    bottom: 10%;
+  }
+}
+
 .s4 .mockup-1 .caption-2 .link, .s4 .mockup-2 .caption-2 .link {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -925,11 +992,26 @@
   color: #fff;
 }
 
+@media (max-width: 576px) {
+  .s4 .mockup-1 .app-link h2, .s4 .mockup-2 .app-link h2 {
+    font-size: 2rem;
+  }
+}
+
 .s4 .mockup-1 .app-link .link, .s4 .mockup-2 .app-link .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 576px) {
+  .s4 .mockup-1 .app-link .link, .s4 .mockup-2 .app-link .link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .s4 .mockup-1 .app-link .link img, .s4 .mockup-2 .app-link .link img {

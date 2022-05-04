@@ -12,6 +12,17 @@
     @media(max-width:576px){
         justify-content: space-between;
         height: 80%;
+    }    
+
+    .d-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        .compare-inner{
+            display: flex;
+        }
     }
 
     h2{
@@ -87,12 +98,22 @@
             border-radius: 50px;
             background-color: $btn-color;
             box-shadow: 4px 5px 9px #4cb9e6b5;
+
+            @media(max-width:576px){
+               height: 3%;
+            }
         }
 
         .pw-1 {
             position: relative;
             width: 0rem;
-            transition: all 1s ease-in-out;          
+            transition: all 1s ease-in-out;         
+            
+            @media(max-width:576px){
+                position: absolute;
+                bottom: 15%;
+                transform: rotate(-90deg);
+            }
         }
 
         .pw-4{
@@ -102,7 +123,13 @@
         .pw-2 {
             position: relative;
             width: 0rem;
-            transition: all 1s ease-in-out;         
+            transition: all 1s ease-in-out;    
+            
+            @media(max-width:576px){
+                position: absolute;
+                bottom: 15%;
+                transform: rotate(-90deg);
+            }
         }
 
         .pw-60{
