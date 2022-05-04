@@ -1389,6 +1389,23 @@ footer::after {
   border-top-left-radius: 50rem;
 }
 
+@media (max-width: 576px) {
+  footer::after {
+    width: 100%;
+    border-top-left-radius: 0rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer::before {
+    content: '';
+    display: inline-block;
+    border: 7px solid transparent;
+    border-top: 8px solid gray;
+    border-bottom: 0 none;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1396,12 +1413,22 @@ footer::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem 0;
 }
 
 .footer img {
   width: 200px;
   height: 43px;
+}
+
+@media (max-width: 576px) {
+  .footer img {
+    width: 128px;
+    height: 27px;
+  }
 }
 
 .footer .footer-links {
@@ -1413,6 +1440,23 @@ footer::after {
           justify-content: space-between;
   width: 40%;
   gap: 3rem;
+}
+
+@media (max-width: 576px) {
+  .footer .footer-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 2rem 0;
+    gap: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .footer-links .d-none {
+    display: none;
+  }
 }
 
 .footer .footer-links a {
@@ -1429,6 +1473,14 @@ footer::after {
           flex-direction: column;
 }
 
+@media (max-width: 576px) {
+  .footer .footer-links .contact {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
 .footer .footer-links .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1436,8 +1488,22 @@ footer::after {
   gap: 1rem;
 }
 
+@media (max-width: 576px) {
+  .footer .footer-links .social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .footer .footer-links .social svg {
   fill: #fff;
+}
+
+@media (max-width: 576px) {
+  .footer .footer-links .social svg {
+    width: 1rem;
+  }
 }
 
 .swiper {
