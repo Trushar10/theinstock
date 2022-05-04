@@ -1,6 +1,6 @@
 .s5 {
     z-index: 5;
-    
+
     .seller-link {
         color: $btn-text-color;
         display: flex;
@@ -16,18 +16,18 @@
             align-items: flex-start;
         }
 
-        h2{
+        h2 {
             font-size: 3rem;
 
-            @media (max-width:1400px){
+            @media (max-width:1400px) {
                 font-size: 2rem;
             }
         }
 
-        a{
+        a {
             font-size: 1.5rem;
 
-            @media (max-width:1400px){
+            @media (max-width:1400px) {
                 font-size: 1.1rem;
             }
 
@@ -38,10 +38,10 @@
     }
 
     .caption {
-        h2{
+        h2 {
             font-size: 4rem;
 
-            @media (max-width:1400px){
+            @media (max-width:1400px) {
                 font-size: 3rem;
             }
 
@@ -55,9 +55,9 @@
             width: 352px;
             height: 530px;
             right: 8%;
-            transform: translateY(-6%);         
+            transform: translateY(-6%);
 
-            @media (max-width:1400px){
+            @media (max-width:1400px) {
                 width: 240px;
                 height: 387px;
             }
@@ -65,47 +65,47 @@
     }
 
     .swiper {
-        overflow: visible; 
+        overflow: visible;
     }
 
 }
 
-.s5-img-1{
+.s5-img-1 {
     background: url('/img/s5-Image-1.webp');
     background-repeat: no-repeat;
     height: 709.59px;
 
-    @media(max-width:1400px){
+    @media(max-width:1400px) {
         height: 519.46px;
     }
 }
 
-.s5-img-2{
+.s5-img-2 {
     background: url('/img/s5-Image-2.webp');
     background-repeat: no-repeat;
     height: 709.59px;
 
-    @media(max-width:1400px){
+    @media(max-width:1400px) {
         height: 519.46px;
     }
 }
 
-.s5-img-3{
+.s5-img-3 {
     background: url('/img/s5-Image-3.webp');
     background-repeat: no-repeat;
     height: 709.59px;
 
-    @media(max-width:1400px){
+    @media(max-width:1400px) {
         height: 519.46px;
     }
 }
 
-.s5-img-4{
+.s5-img-4 {
     background: url('/img/s5-Image-4.webp');
     background-repeat: no-repeat;
     height: 709.59px;
 
-    @media(max-width:1400px){
+    @media(max-width:1400px) {
         height: 519.46px;
     }
 }

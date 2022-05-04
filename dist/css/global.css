@@ -767,31 +767,6 @@
   }
 }
 
-.s3-flex .compare .compare-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-}
-
-@media (max-width: 576px) {
-  .s3-flex .compare .compare-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .s3-flex .compare .compare-item div {
-    height: 90%;
-  }
-}
-
 .s3-flex .compare svg, .s3-flex .compare h3 {
   width: 15%;
 }
@@ -820,14 +795,6 @@
   background-color: #009cdc;
   -webkit-box-shadow: 4px 5px 9px #4cb9e6b5;
           box-shadow: 4px 5px 9px #4cb9e6b5;
-}
-
-@media (max-width: 576px) {
-  .s3-flex .compare .progress-bar {
-    height: 4% !important;
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-  }
 }
 
 .s3-flex .compare .pw-1 {
