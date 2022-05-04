@@ -1224,6 +1224,7 @@
   .s6 .testimonial.swiper .swiper-slide img {
     width: 100px;
     height: 100px;
+    display: none;
   }
 }
 
