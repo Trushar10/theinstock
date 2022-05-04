@@ -1109,17 +1109,17 @@
   }
 }
 
-.s6 {
-  gap: 3rem;
-  z-index: 5;
-}
-
 @media (max-width: 576px) {
-  .s6 {
+  .s-flex.s6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.s6 {
+  gap: 3rem;
+  z-index: 5;
 }
 
 .s6 .reverse.caption {
@@ -1251,6 +1251,7 @@
 @media (max-width: 576px) {
   .s6 .testimonial.swiper .swiper-slide p {
     text-align: center;
+    font-size: .9rem;
   }
 }
 

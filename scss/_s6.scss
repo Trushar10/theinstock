@@ -1,10 +1,12 @@
+.s-flex.s6{
+    @media(max-width:576px){
+        justify-content: center;
+    }
+}
+
 .s6 {
     gap: 3rem;
     z-index: 5;
-
-    @media (max-width:576px){
-        justify-content: center;
-    }
 
     // .swiper{
     //     height: auto;
@@ -107,6 +109,7 @@
 
                 @media(max-width:576px){
                     text-align: center;
+                    font-size: .9rem;
                 }
             }
         }
