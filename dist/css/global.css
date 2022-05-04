@@ -1527,7 +1527,6 @@
 .s6 {
   gap: 3rem;
   z-index: 5;
-  overflow-x: hidden;
 }
 
 .s6 .reverse.caption {
@@ -1625,8 +1624,8 @@
 }
 
 .s6 .testimonial.swiper .swiper-slide img {
-  width: 160px;
-  height: 160px;
+  width: 144px;
+  height: 144px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 1s ease-in-out;
@@ -1649,7 +1648,7 @@
 
 .s6 .testimonial.swiper .swiper-slide p {
   text-align: start;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
