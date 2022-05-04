@@ -2,6 +2,14 @@ new fullpage('#fullpage', {
 	autoScrolling: true,
 });
 
+//menu
+const toggleBtn = document.querySelector('.menu_checkbox');
+const menu = document.querySelector('.menu-container');
+
+toggleBtn.addEventListener('click', function () {
+	menu.classList.toggle('show');
+});
+
 //section 1 slider
 var swiper = new Swiper('.mySwiper1', {
 	speed: 1000,
