@@ -869,9 +869,7 @@
     position: absolute;
     bottom: -1rem;
     width: 100%;
-    left: -50%;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    left: 0%;
   }
 }
 
