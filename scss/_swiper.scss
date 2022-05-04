@@ -20,6 +20,11 @@
   width: 5%;
   height: .7rem;
   border-radius: 5px;
+
+  @media(max-width:576px){
+    width: 9%;
+    height: .5rem;
+  }
 }
 
 .swiper-pagination-bullet-active{

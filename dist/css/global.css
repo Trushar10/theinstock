@@ -1873,6 +1873,13 @@ footer::after {
   border-radius: 5px;
 }
 
+@media (max-width: 576px) {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 9%;
+    height: .5rem;
+  }
+}
+
 .swiper-pagination-bullet-active {
   background-color: #fff;
 }
