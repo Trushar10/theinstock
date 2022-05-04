@@ -303,7 +303,7 @@
 
 .e-eight {
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   top: -20%;
   right: 0;
 }
@@ -345,7 +345,7 @@
 
 .e-nine {
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   bottom: 5%;
   left: -5%;
 }
@@ -468,6 +468,12 @@
   opacity: 1;
   right: 0;
   width: 20px;
+}
+
+@media (min-width: 576px) {
+  .nav-none {
+    display: none;
+  }
 }
 
 .header {
@@ -2217,6 +2223,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
+  cursor: pointer;
   color: #fff;
   border-radius: 50px;
   background-color: #009cdc;

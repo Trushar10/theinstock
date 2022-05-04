@@ -1,6 +1,11 @@
-new fullpage('#fullpage', {
-	autoScrolling: true,
-});
+const fullPageJs = document.getElementsByClassName('full_page').length > 0;
+
+if (fullPageJs) {
+	new fullpage('#fullpage', {
+		autoScrolling: true,
+		licenseKey: null,
+	});
+}
 
 //menu
 const toggleBtn = document.querySelector('.menu_checkbox');
