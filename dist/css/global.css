@@ -142,7 +142,8 @@
 
 @media (max-width: 576px) {
   .e-four {
-    display: none;
+    top: -21%;
+    left: -60%;
   }
 }
 
@@ -187,7 +188,8 @@
 
 @media (max-width: 576px) {
   .e-five {
-    display: none;
+    top: -30%;
+    left: -60%;
   }
 }
 
@@ -958,7 +960,6 @@
   .s4 .mockup-1 .caption-1, .s4 .mockup-2 .caption-1 {
     left: 100%;
     top: 09%;
-    background: #000;
     width: 100%;
   }
 }
