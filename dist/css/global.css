@@ -1400,10 +1400,13 @@ footer::after {
 
 @media (max-width: 576px) {
   footer::after {
-    width: 100%;
+    width: 150%;
     border-top-left-radius: 0rem;
     -webkit-transform: rotate(358deg);
             transform: rotate(358deg);
+    position: absolute;
+    top: 10px;
+    left: -10px;
   }
 }
 

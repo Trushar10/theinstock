@@ -56,9 +56,12 @@ footer {
         border-top-left-radius: 50rem;
 
         @media(max-width:576px){
-            width: 100%;
+            width: 150%;
             border-top-left-radius: 0rem;
             transform: rotate(358deg);
+            position: absolute;
+            top: 10px;
+            left: -10px;
         }
     }
 }
