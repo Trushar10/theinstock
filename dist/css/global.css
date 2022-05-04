@@ -1398,16 +1398,6 @@ footer::after {
   }
 }
 
-@media (max-width: 576px) {
-  footer::before {
-    content: '';
-    width: 100%;
-    border-top-left-radius: 0rem;
-    border-top: 1rem solid #fff;
-    border-right: 25rem solid #4db9e5;
-  }
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
