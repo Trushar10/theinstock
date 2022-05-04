@@ -1479,6 +1479,7 @@ footer::after {
 
 @media (max-width: 576px) {
   .footer .footer-links .contact {
+    font-size: .9rem;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
