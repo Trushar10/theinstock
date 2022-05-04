@@ -846,6 +846,7 @@
 }
 
 .s3-flex .d-inner .compare-inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,9 +867,11 @@
 @media (max-width: 576px) {
   .s3-flex .d-inner .compare-inner .note {
     position: absolute;
-    bottom: 0rem;
+    bottom: -1rem;
     width: 100%;
-    left: -2rem;
+    left: -50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 
