@@ -56,15 +56,25 @@ var swiper = new Swiper('.mySwiper6', {
 	},
 });
 
-var swiper = new Swiper('.mySwiper7', {
-	slidesPerView: 3,
-	spaceBetween: 30,
-	// loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-});
+const viewportWidth = window.innerWidth;
+
+if (viewportWidth < 576) {
+	var swiper = new Swiper('.mySwiper7', {
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+} else {
+	var swiper = new Swiper('.mySwiper7', {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+}
 
 //Counter
 const faders = document.querySelectorAll('.counter');
