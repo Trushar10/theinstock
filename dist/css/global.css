@@ -313,6 +313,12 @@
   z-index: 6;
 }
 
+@media (max-width: 576px) {
+  .header {
+    padding-top: 1rem;
+  }
+}
+
 .header .site-identity img {
   width: 200px;
   height: 43px;
