@@ -2019,6 +2019,13 @@ footer::after {
   fill: #fff;
 }
 
+@media (max-width: 1400px) {
+  .footer .footer-links .social svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 @media (max-width: 576px) {
   .footer .footer-links .social svg {
     width: 1rem;

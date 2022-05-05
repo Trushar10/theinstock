@@ -133,6 +133,11 @@ footer {
             svg {
                 fill:#fff;
 
+                @media(max-width:1400px){
+                    width: 20px;
+                    height: 20px;
+                }
+
                 @media(max-width:576px){
                     width: 1rem;
                     height: 1rem;
