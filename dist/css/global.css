@@ -2265,6 +2265,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.25) {
+  :root {
+    zoom: 1;
+  }
+}
+
 p {
   margin-bottom: 1rem;
 }
