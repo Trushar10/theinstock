@@ -41,6 +41,12 @@
     @media (max-width:576px) {
         display: none;
     }
+
+    @media 
+    (-webkit-min-device-pixel-ratio: 1.25){ 
+        top: -15%;
+        left: -15%;
+    }
    
     img{
         width: 960px;
@@ -59,8 +65,8 @@
 
         @media 
         (-webkit-min-device-pixel-ratio: 1.25){ 
-            width: 560px;
-            height: 626px;
+            width: 640px;
+            height: 715px;
         }
     }
 }
