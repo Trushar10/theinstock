@@ -25,10 +25,12 @@ body{
     font-family: $text-font;
 }
 
-@media (-webkit-device-pixel-ratio: 1.25) {
+@media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 96dpi){ 
     * {
-      zoom: 0.8;
-    }
+        zoom: 0.8;
+      }
 }
 
 p{
