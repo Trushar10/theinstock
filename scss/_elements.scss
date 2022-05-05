@@ -42,11 +42,11 @@
         display: none;
     }
 
-    @media 
-    (-webkit-min-device-pixel-ratio: 1.25){ 
-        top: -15%;
-        left: -15%;
-    }
+    // @media 
+    // (-webkit-min-device-pixel-ratio: 1.25){ 
+    //     top: -15%;
+    //     left: -15%;
+    // }
    
     img{
         width: 960px;
@@ -63,11 +63,11 @@
             height: 715px;
         }
 
-        @media 
-        (-webkit-min-device-pixel-ratio: 1.25){ 
-            width: 640px;
-            height: 715px;
-        }
+        // @media 
+        // (-webkit-min-device-pixel-ratio: 1.25){ 
+        //     width: 640px;
+        //     height: 715px;
+        // }
     }
 }
 
@@ -86,11 +86,11 @@
         right: 0;
     }
 
-    @media 
-    (-webkit-min-device-pixel-ratio: 1.25){ 
-        top: -30%;
-        left: -15%;
-    }
+    // @media 
+    // (-webkit-min-device-pixel-ratio: 1.25){ 
+    //     top: -30%;
+    //     left: -15%;
+    // }
 
     @media (max-width:576px) {
         display: none;
@@ -110,11 +110,11 @@
             height: 623px;
         }
 
-        @media 
-        (-webkit-min-device-pixel-ratio: 1.25){ 
-            width: 800px;
-            height: 692px;
-        }
+        // @media 
+        // (-webkit-min-device-pixel-ratio: 1.25){ 
+        //     width: 800px;
+        //     height: 692px;
+        // }
     }
 }
 
@@ -138,10 +138,10 @@
         left: -60%;
     }
 
-    @media 
-    (-webkit-min-device-pixel-ratio: 1.25){ 
-        top: -15%;        
-    }
+    // @media 
+    // (-webkit-min-device-pixel-ratio: 1.25){ 
+    //     top: -15%;        
+    // }
     
     img{
         width: 2400px;
@@ -157,11 +157,11 @@
             height: 439px;     
         }
 
-        @media 
-        (-webkit-min-device-pixel-ratio: 1.25){ 
-            width: 1920px;
-            height: 527px;     
-        }
+        // @media 
+        // (-webkit-min-device-pixel-ratio: 1.25){ 
+        //     width: 1920px;
+        //     height: 527px;     
+        // }
     }
 }
 
@@ -185,6 +185,11 @@
         left: -70%;
     }
 
+    // @media 
+    // (-webkit-min-device-pixel-ratio: 1.25){ 
+    //     top: -50%;     
+    // }
+
     img{
         width: 2400px;
         height: 541px;
@@ -199,11 +204,11 @@
             height: 433px;     
         }
         
-        @media 
-        (-webkit-min-device-pixel-ratio: 1.25){ 
-            width: 1920px;
-            height: 527px;     
-        }
+        // @media 
+        // (-webkit-min-device-pixel-ratio: 1.25){ 
+        //     width: 1920px;
+        //     height: 527px;     
+        // }
     }
 }
 
