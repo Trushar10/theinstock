@@ -14,6 +14,11 @@
                    transform: translateX(-3%);
                }
             }
+
+            .absolute-1{
+                position: absolute;
+                left: 0;
+            }
         }
     }
 
@@ -49,6 +54,11 @@
                     width: 160px;
                     height: 258px;
                 }
+            }
+
+            .absolute-2{
+                position: absolute;
+                right: 0;
             }
         }
         
@@ -118,3 +128,4 @@
         }
     }
 }
+

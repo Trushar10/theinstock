@@ -294,27 +294,6 @@ s2Slide.forEach((s2) => {
 });
 
 //Section 3 progress bar
-const s3Text = document.querySelectorAll('.animate-x');
-
-const s3Options_1 = {
-	threshold: 1,
-	rootMargin: '0px',
-};
-
-const s3OnScroll_1 = new IntersectionObserver(function (entries, s3OnScroll_1) {
-	entries.forEach((entry) => {
-		if (!entry.isIntersecting) {
-			return;
-		} else {
-			entry.target.classList.add('fl');
-			s3OnScroll_1.unobserve(entry.target);
-		}
-	});
-}, s3Options_1);
-
-s3Text.forEach((animate) => {
-	s3OnScroll_1.observe(animate);
-});
 
 //Progress bar 1
 const progress_1 = document.querySelectorAll('.pw-1');

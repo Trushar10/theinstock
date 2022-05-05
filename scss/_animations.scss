@@ -1,0 +1,58 @@
+.op-0{
+    opacity: 0;
+    transition: all 1.5s linear;
+    transition-delay: 1s;
+}
+
+//right
+.animate--x {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all .5s ease-in-out;
+}
+
+.fr {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+//left
+.animate-x {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all .5s ease-out;
+}
+
+.fl {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+//bottom
+
+.scale-0{
+    transition: all .5s ease-out;
+    transform: scale(0);
+}
+
+.scale{
+    transform: scale(1) !important;    
+}
+
+.bottom {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all .5s ease-out;
+
+    @media(max-width:576px){
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.fb{
+    opacity: 1;
+    transform:  translateY(0);    
+    transition-delay: .8s;
+}
