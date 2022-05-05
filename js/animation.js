@@ -97,7 +97,6 @@ s4Opacity_2.forEach((s4Opacity_2) => {
 });
 
 //Section 5
-
 const fromBottom = document.querySelectorAll('.bottom');
 
 const fbOptions = {
@@ -118,4 +117,26 @@ const fbScroll = new IntersectionObserver(function (entries, fbScroll) {
 
 fromBottom.forEach((fb) => {
 	fbScroll.observe(fb);
+});
+
+const fromBottomY = document.querySelectorAll('.animate-y');
+
+const fbYOptions = {
+	threshold: 1,
+	rootMargin: '0px',
+};
+
+const fbYScroll = new IntersectionObserver(function (entries, fbYScroll) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			entry.target.classList.add('fbm');
+			fbYScroll.unobserve(entry.target);
+		}
+	});
+}, fbYOptions);
+
+fromBottomY.forEach((fby) => {
+	fbYScroll.observe(fby);
 });

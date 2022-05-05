@@ -65,8 +65,16 @@
     transition-delay: .8s;
 }
 
+.animate-y{
+    opacity: 0;    
+    transition: all .5s ease-out;
+
+    @media(max-width:576px){
+        opacity: 1;
+    }
+}
 
 .fbm{
     opacity: 1;
-    transform: translateY(0);    
+    // transform: translateY(-5%);    
 }

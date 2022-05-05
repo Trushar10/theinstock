@@ -26,6 +26,10 @@
 
         .animate-x{
             transform: translateX(-15%);
+
+            @media(max-width:576px){
+                transform: translateX(-8%);
+            }
         }
 
         @media(max-width:576px){
