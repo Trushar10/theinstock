@@ -2315,6 +2315,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 1200px), (min-width: 960px) and (-webkit-device-pixel-ratio: 1.25) {
+  .container {
+    zoom: .8;
+  }
+}
+
 .w-85 {
   width: 85%;
 }
