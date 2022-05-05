@@ -2265,7 +2265,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
+@media (device-width: 1440px) and (device-height) {
   * {
     zoom: 0.8;
   }
