@@ -221,7 +221,7 @@
 @media (-webkit-min-device-pixel-ratio: 1.25) and (-webkit-max-device-pixel-ratio: 1.5) {
   .e-three {
     top: -30%;
-    left: -15%;
+    right: -15%;
   }
 }
 
