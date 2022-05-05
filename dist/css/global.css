@@ -2265,7 +2265,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-@media (device-width: 1440px) and (device-height) {
+@media (device-width: 1440px) and (device-height: 800px) {
   * {
     zoom: 0.8;
   }
