@@ -1,26 +1,3 @@
-//Section 2
-const s2Text = document.querySelectorAll('.animate-s2-text');
-
-const s2Options_2 = {
-	threshold: 1,
-	rootMargin: '0px',
-};
-
-const s2OnScroll_2 = new IntersectionObserver(function (entries, s2OnScroll_2) {
-	entries.forEach((entry) => {
-		if (!entry.isIntersecting) {
-			return;
-		} else {
-			entry.target.classList.add('fl');
-			s2OnScroll_2.unobserve(entry.target);
-		}
-	});
-}, s2Options_2);
-
-s2Text.forEach((animate_x_2text) => {
-	s2OnScroll_2.observe(animate_x_2text);
-});
-
 //Section 3
 const s3Text = document.querySelectorAll('.animate-x');
 
@@ -34,8 +11,8 @@ const s3OnScroll_1 = new IntersectionObserver(function (entries, s3OnScroll_1) {
 		if (!entry.isIntersecting) {
 			return;
 		} else {
-			entry.target.classList.add('fl');
 			s3OnScroll_1.unobserve(entry.target);
+			entry.target.classList.add('fl');
 		}
 	});
 }, s3Options_1);
@@ -117,4 +94,28 @@ s4OpacityOptions_2);
 
 s4Opacity_2.forEach((s4Opacity_2) => {
 	s4OpacityOnScroll_2.observe(s4Opacity_2);
+});
+
+//Section 5
+
+const fromBottom = document.querySelectorAll('.bottom');
+
+const fbOptions = {
+	threshold: 1,
+	rootMargin: '0px',
+};
+
+const fbScroll = new IntersectionObserver(function (entries, fbScroll) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			entry.target.classList.add('fb');
+			fbScroll.unobserve(entry.target);
+		}
+	});
+}, fbOptions);
+
+fromBottom.forEach((fb) => {
+	fbScroll.observe(fb);
 });

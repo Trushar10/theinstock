@@ -85,6 +85,12 @@
           transition-delay: .8s;
 }
 
+.fbm {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .e-one {
   position: absolute;
   z-index: 2;
@@ -1539,8 +1545,6 @@
   width: 352px;
   height: 530px;
   right: 8%;
-  -webkit-transform: translateY(-6%);
-          transform: translateY(-6%);
 }
 
 @media (max-width: 1400px) {

@@ -20,7 +20,6 @@ var swiper = new Swiper('.mySwiper1', {
 	speed: 1000,
 	spaceBetween: 30,
 	effect: 'fade',
-	loop: true,
 	centeredSlides: true,
 	autoplay: {
 		delay: 3000,
@@ -54,7 +53,6 @@ const swiper5Scroll = new IntersectionObserver(function (
 				speed: 1000,
 				spaceBetween: 30,
 				effect: 'fade',
-				loop: true,
 				fadeEffect: {
 					crossFade: true,
 				},
@@ -124,7 +122,6 @@ const swiper6Scroll = new IntersectionObserver(function (
 				speed: 1000,
 				spaceBetween: 30,
 				effect: 'fade',
-				loop: true,
 				centeredSlides: true,
 				autoplay: {
 					delay: 3000,
@@ -370,26 +367,4 @@ const scaleScroll = new IntersectionObserver(function (entries, scaleScroll) {
 
 scale.forEach((scaled) => {
 	scaleScroll.observe(scaled);
-});
-
-const fromBottom = document.querySelectorAll('.bottom');
-
-const fbOptions = {
-	threshold: 1,
-	rootMargin: '0px',
-};
-
-const fbScroll = new IntersectionObserver(function (entries, fbScroll) {
-	entries.forEach((entry) => {
-		if (!entry.isIntersecting) {
-			return;
-		} else {
-			entry.target.classList.add('fb');
-			fbScroll.unobserve(entry.target);
-		}
-	});
-}, fbOptions);
-
-fromBottom.forEach((fb) => {
-	fbScroll.observe(fb);
 });
