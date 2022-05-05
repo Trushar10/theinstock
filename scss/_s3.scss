@@ -24,6 +24,10 @@
         height: 100%;
         gap: 2rem;
 
+        .animate-x{
+            transform: translateX(-15%);
+        }
+
         @media(max-width:576px){
             box-shadow: 8px 8px 24px #4cb9e64d;
             border-radius: 25px;

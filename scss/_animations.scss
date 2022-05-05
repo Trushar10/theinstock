@@ -7,8 +7,12 @@
 //right
 .animate--x {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(20%);
     transition: all .5s ease-in-out;
+
+    @media(max-width:576px){
+        transform: translateX(5%);
+    }
 }
 
 .fr {
@@ -19,20 +23,24 @@
 //left
 .animate-x {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-20%);
     transition: all .5s ease-out;
+
+    @media(max-width:576px){
+        transform: translateX(-5%);
+    }
 }
 
 .fl {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) !important;
 }
 
 
 //bottom
 
 .scale-0{
-    transition: all .5s ease-out;
+    transition: all 1s ease-out;
     transform: scale(0);
 }
 
