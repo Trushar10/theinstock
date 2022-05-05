@@ -2315,9 +2315,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.25), (-webkit-max-device-pixel-ratio: 1), (max-resolution: 96dpi) {
+@media (-webkit-min-device-pixel-ratio: 1.25) {
   .container {
-    max-width: 1366px;
+    zoom: .8;
   }
 }
 
